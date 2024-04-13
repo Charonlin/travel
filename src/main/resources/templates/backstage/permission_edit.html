@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>修改信息</title>
+    <!-- 引入统一的css和js文件 -->
+    <th:block th:replace="/backstage/common_resource::common_js"></th:block>
+    <th:block th:replace="/backstage/common_resource::common_css"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+<!-- 引入页面头部 -->
+<header th:replace="/backstage/common_header::header"></header>
+<!-- 引入页面导航 -->
+<aside th:replace="/backstage/common_aside::aside"></aside>
+
+<div class="wrapper">
+    <div class="content-wrapper">
+        <!-- 内容头部 -->
+        <section class="content-header">
+            <h1>
+                权限管理
+                <small>修改信息</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="@{/backstage/index}"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li><a href="@{/backstage/permission/all}">权限管理</a></li>
+                <li class="active">修改信息</li>
+            </ol>
+        </section>
+        <!-- 内容头部 /-->
+        <!-- 正文区域 -->
+        <section class="content">
+            <form th:action="@{/backstage/permission/update}" method="post">
+                <!-- 这里是通过隐藏的方式将aid一起上传上去，这样才可以封装成一个完整的Admin对象从而进行update操作！！！ -->
+                <input type="hidden" th:value="${permission.pid}" name="pid">
+                <div class="tab-pane" id="tab-common">
+                    <div class="row data-type">
+                        <div class="col-md-2 title">权限名称permissionName</div>
+                        <div class="col-md-4 data">
+                            <input type="text" class="form-control" placeholder="名称" name="permissionName" th:value="${permission.permissionName}">
+                        </div>
+                        <div class="col-md-2 title">权限描述permissionDesc</div>
+                        <div class="col-md-4 data">
+                            <input type="text" class="form-control" placeholder="描述" name="permissionDesc" th:value="${permission.permissionDesc}">
+                        </div>
+                        <div class="col-md-2 title"></div>
+                        <div class="col-md-10 data text-center">
+                            <button type="submit" class="btn bg-maroon">保存</button>
+                            <button type="button" class="btn bg-default" onclick="history.back(-1);">返回</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+<!-- 引入页面底部 -->
+<footer th:replace="~{/backstage/common_footer::footer}"></footer>
+</div>
+
+</body>
+</html>

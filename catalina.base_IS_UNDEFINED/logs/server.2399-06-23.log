@@ -1,0 +1,55 @@
+21:32:43.711 [main] INFO  com.scnu.travel.TravelApplication - Starting TravelApplication using Java 11.0.6 on LAPTOP-POGI0V0M with PID 4024 (D:\ideaProject\travel\target\classes started by 12942 in D:\ideaProject\travel)
+21:32:43.715 [main] INFO  com.scnu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+21:32:44.700 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+21:32:44.707 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+21:32:44.708 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21:32:44.708 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+21:32:44.812 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:32:44.812 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1063 ms
+21:32:46.967 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ad1a276, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a833595, org.springframework.security.web.context.SecurityContextPersistenceFilter@41167ded, org.springframework.security.web.header.HeaderWriterFilter@5bb97fe7, org.springframework.web.filter.CorsFilter@31006a75, org.springframework.security.web.authentication.logout.LogoutFilter@3d235635, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cc7e3ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63dc3420, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eb906f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49122853, org.springframework.security.web.session.SessionManagementFilter@63262071, org.springframework.security.web.access.ExceptionTranslationFilter@1716c037, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@740c4868]
+21:32:47.007 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+21:32:47.021 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+21:32:47.031 [main] INFO  com.scnu.travel.TravelApplication - Started TravelApplication in 3.658 seconds (JVM running for 5.389)
+21:33:40.516 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:33:40.516 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:33:40.516 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+21:33:41.480 [http-nio-80-exec-2] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [914] milliseconds.
+21:33:46.062 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:33:46.459 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:33:49.974 [http-nio-80-exec-6] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 21:33:49 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=61, exceptionMessage=null)
+21:33:53.574 [http-nio-80-exec-10] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/role/all, visitTime=Fri Jun 23 21:33:53 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=18, exceptionMessage=null)
+21:33:56.484 [http-nio-80-exec-1] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/permission/all, visitTime=Fri Jun 23 21:33:56 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=16, exceptionMessage=null)
+21:34:04.442 [http-nio-80-exec-7] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 21:34:04 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=9, exceptionMessage=null)
+21:34:12.404 [http-nio-80-exec-5] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/role/all, visitTime=Fri Jun 23 21:34:12 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=8, exceptionMessage=null)
+21:34:18.401 [http-nio-80-exec-4] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/category/all, visitTime=Fri Jun 23 21:34:18 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=19, exceptionMessage=null)
+21:34:41.144 [http-nio-80-exec-4] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 21:34:41 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=10, exceptionMessage=null)
+21:34:46.481 [http-nio-80-exec-3] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/role/all, visitTime=Fri Jun 23 21:34:46 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=10, exceptionMessage=null)
+22:15:24.545 [main] INFO  com.scnu.travel.TravelApplication - Starting TravelApplication using Java 11.0.6 on LAPTOP-POGI0V0M with PID 19984 (D:\ideaProject\travel\target\classes started by 12942 in D:\ideaProject\travel)
+22:15:24.547 [main] INFO  com.scnu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+22:15:25.761 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+22:15:25.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+22:15:25.769 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:15:25.769 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+22:15:25.895 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:15:25.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1308 ms
+22:15:27.865 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72715e61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68f776ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@660296d5, org.springframework.security.web.header.HeaderWriterFilter@1846ad0f, org.springframework.web.filter.CorsFilter@5a6195b8, org.springframework.security.web.authentication.logout.LogoutFilter@45c90a05, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@296676c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca22e19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@722b2728, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8af1c49, org.springframework.security.web.session.SessionManagementFilter@31b741e2, org.springframework.security.web.access.ExceptionTranslationFilter@37bda983, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12aa519b]
+22:15:27.913 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+22:15:27.929 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+22:15:27.941 [main] INFO  com.scnu.travel.TravelApplication - Started TravelApplication in 3.758 seconds (JVM running for 4.903)
+22:16:02.269 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:16:02.269 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:16:02.269 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+22:16:03.260 [http-nio-80-exec-8] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [437] milliseconds.
+22:16:11.474 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:16:11.936 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:32:11.556 [http-nio-80-exec-7] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/category/all, visitTime=Fri Jun 23 22:32:11 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=71, exceptionMessage=null)
+22:34:31.095 [http-nio-80-exec-7] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/product/all, visitTime=Fri Jun 23 22:34:31 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=38, exceptionMessage=null)
+22:42:34.182 [http-nio-80-exec-6] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 22:42:34 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=45, exceptionMessage=null)
+22:42:36.425 [http-nio-80-exec-5] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/role/all, visitTime=Fri Jun 23 22:42:36 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=28, exceptionMessage=null)
+22:42:38.829 [http-nio-80-exec-3] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/permission/all, visitTime=Fri Jun 23 22:42:38 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=29, exceptionMessage=null)
+22:52:28.104 [http-nio-80-exec-5] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/permission/edit, visitTime=Fri Jun 23 22:52:28 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=9, exceptionMessage=null)
+22:52:32.137 [http-nio-80-exec-9] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/permission/all, visitTime=Fri Jun 23 22:52:32 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=18, exceptionMessage=null)
+22:52:35.174 [http-nio-80-exec-4] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 22:52:35 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=15, exceptionMessage=null)
+22:52:37.656 [http-nio-80-exec-4] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/edit, visitTime=Fri Jun 23 22:52:37 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=6, exceptionMessage=null)
+22:52:40.356 [http-nio-80-exec-10] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Jun 23 22:52:40 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=16, exceptionMessage=null)
+22:53:08.045 [http-nio-80-exec-8] INFO  com.scnu.travel.bean.LogAop - Log(url=/backstage/admin/findRole, visitTime=Fri Jun 23 22:53:08 CST 2023, username=彭志帆, ip=127.0.0.1, executionTime=24, exceptionMessage=null)

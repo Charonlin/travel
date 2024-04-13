@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scnu.travel.mapper.RoleMapper">
+    <select id="findRoleIdByAdmin" parameterType="int" resultType="int">
+        select rid from admin_role where aid = #{aid}
+    </select>
+
+
+    <resultMap id="roleMap" type="com.scnu.travel.pojo.Role">
+        <id property="rid" column="rid"></id>
+        <result property="roleName" column="roleName"></result>
+        <result property="roleDesc" column="roleDesc"></result>
+        <collection property="permissions" column="rid" ofType="com.scnu.travel.pojo.Permission">
+            <result property="permissionName" column="permissionName"></result>
+            <result property="permissionDesc" column="permissionDesc"></result>
+        </collection>
+    </resultMap>
+    <select id="findDesc" parameterType="int" resultMap="roleMap">
+        SELECT * FROM
+        role
+        LEFT JOIN role_permission ON role.rid = role_permission.rid
+        LEFT JOIN permission ON permission.pid = role_permission.pid
+        WHERE role.rid = #{rid};
+    </select>
+
+    <delete id="deleteRoleAllPermission" parameterType="int">
+        delete from role_permission where rid = #{rid}
+    </delete>
+
+    <insert id="addRolePermission">
+        insert into role_permission values(#{rid},#{pid})
+    </insert>
+</mapper>
